@@ -1,0 +1,12 @@
+.bg-custom-grey {
+    background-color: #bebebe;
+}
+
+.navbar-custom-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    margin-left: 5rem;
+}
