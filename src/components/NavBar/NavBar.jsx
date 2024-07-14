@@ -1,13 +1,14 @@
 import React from 'react'
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
+import { Link } from 'react-router-dom'
 
 function NavBar({cartCount}) {
     return (
         <nav className="navbar navbar-expand-lg bg-custom-grey">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <img src="src/assets/logo.png" alt="Logo" width="auto" height="100" class="d-inline-block align-text-top" />
+                <a className="navbar-brand" href="#"> {/* HAY QUE AGREGARLE LA RUTA AL INDEX CON TODOS LOS ARTICULOS */}
+                    <img src="src/assets/logo.png" alt="Logo" width="auto" height="100" className="d-inline-block align-text-top" />
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -15,10 +16,19 @@ function NavBar({cartCount}) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active navbar-custom-text" aria-current="page" href="#">Inicio</a>
+                            <Link className="nav-link active navbar-custom-text" aria-current="page" to="/category/mangas">Mangas</Link>
                         </li>
                          <li className="nav-item">
-                            <a className="nav-link active navbar-custom-text" href="#">Productos</a>
+                            <Link className="nav-link active navbar-custom-text" to="/category/comics">Comics</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active navbar-custom-text" to="/category/libros">Libros</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active navbar-custom-text" to="/category/juegos-de-rol">Juegos de Rol</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active navbar-custom-text" to="/category/figuras">Figuras</Link>
                         </li>
                     </ul>
                     <div className="d-flex">

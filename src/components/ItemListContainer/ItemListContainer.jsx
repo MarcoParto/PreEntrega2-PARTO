@@ -1,25 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css'
+import { getProducts, getProductsByCategory } from '../../asyncMock'
+import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
-const categories = [
-    {id: 1, name: 'Mangas'},
-    {id: 2, name: 'Comics'}, 
-    {id: 3, name: 'Libros'},
-    {id: 4, name: 'Juegos de Rol'},
-    {id: 5, name: 'Figuras'}
-]
+const ItemListContainer = ({greetings}) => {
+  const [products, setProducts] = useState([])
+  const {category} = useParams()
 
-function ItemListContainer({greetings}) {
+  useEffect(() => {
+    if (!category) {
+      getProducts()
+        .then((res) => {
+          setProducts(res)
+      })
+      .catch((err) => console.log(err))
+    } else {
+      getProductsByCategory(category)
+        .then((res) => {
+          setProducts(res)
+        })
+        .catch((err) => console.log(err))
+    }    
+  }, [category])
 
   return (
-    <>
-        <h2 className='custom-title'>{greetings}</h2>
-        <ul className='list-group'>
-          {categories.map((category) => 
-            <li className='list-group-item list-custom-text' key={category.id}>{category.name}</li>
-          )} 
-        </ul>
-    </>
+    <div>
+      <h1 className='custom-title'>{greetings}</h1>
+      <ItemList products={products} />
+    </div>
   )
 }
 
