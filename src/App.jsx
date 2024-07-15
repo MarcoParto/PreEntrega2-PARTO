@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer greetings="Bienvenido a OtakuHeaven!" />} />
         <Route path='/category/:category' element={<ItemListContainer />} />
-        <Route path='/detail/:id' element={<ItemDetailContainer  />} />
+        <Route path='/item/:id' element={<ItemDetailContainer  />} />
       </Routes>
     </BrowserRouter>
   )
