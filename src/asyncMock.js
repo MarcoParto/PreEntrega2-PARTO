@@ -179,6 +179,51 @@ const products = [
     stock: 10,
     description: "Descripcion de Drifting Dragons"
   },
+  {
+    id: "21",
+    name: "Figura - Superman",
+    price: 72000,
+    category: "figuras",
+    img: "/assets/superman-figura.jpg",
+    stock: 10,
+    description: "Descripcion de figura Superman"
+  },
+  {
+    id: "22",
+    name: "Figura - Batman",
+    price: 72000,
+    category: "figuras",
+    img: "/assets/batman-figura.jpg",
+    stock: 10,
+    description: "Descripcion de figura Batman"
+  },
+  {
+    id: "23",
+    name: "El Señor de los Anillos - El Juego de Rol",
+    price: 80000,
+    category: "libros",
+    img: "/assets/lord-of-the-rings-book.jpg",
+    stock: 10,
+    description: "Descripcion de El Señor de los Anillo Juego de Rol"
+  },
+  {
+    id: "24",
+    name: "Dungeon & Dragons - Caja de Inicio",
+    price: 120000,
+    category: "juegos-de-rol",
+    img: "/assets/d&d-caja-inicio.png",
+    stock: 10,
+    description: "Descripcion de El Señor de los Anillo Juego de Rol"
+  },
+  {
+    id: "25",
+    name: "El Señor de los Anillos - Viajes por la Tierra Media",
+    price: 150000,
+    category: "juegos-de-rol",
+    img: "/assets/el-senor-de-los-anillos-viajes-por-la-tierra-media.jpg",
+    stock: 10,
+    description: "Descripcion de El Señor de los Anillo Juego de Rol"
+  },
 ];
   
 export const getProducts = () => {
