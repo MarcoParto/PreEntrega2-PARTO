@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <div className='custom-item-detail-container'>
-      {product ? <ItemDetail {...product} /> : <p>Loading...</p>}
+      {product ? <ItemDetail {...product} /> : <p className="loading" >Loading...</p>}
     </div>
   )
 }

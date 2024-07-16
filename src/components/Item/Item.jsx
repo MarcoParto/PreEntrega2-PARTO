@@ -7,9 +7,9 @@ const Item = ({id, name, img, category, price}) => {
     <article className='custom-item'>
         <h2>{name}</h2>
         <img src={img} alt={name}/>
-        <p>Categoria: {category}</p>
+        <p><u>Categoria:</u> {category.toUpperCase()}</p>
         <h3>${price}</h3>
-        <Link to={`/item/${id}`}>Ver Detalle</Link>
+        <Link className="custom-btn" to={`/item/${id}`}>Ver Detalle</Link>
     </article>
   )
 }

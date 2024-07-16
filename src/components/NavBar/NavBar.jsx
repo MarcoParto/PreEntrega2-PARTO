@@ -1,7 +1,7 @@
 import React from 'react'
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 function NavBar({cartCount}) {
     return (
@@ -16,19 +16,19 @@ function NavBar({cartCount}) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active navbar-custom-text" aria-current="page" to="/category/mangas">Mangas</Link>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/mangas">MANGAS</NavLink>
                         </li>
                          <li className="nav-item">
-                            <Link className="nav-link active navbar-custom-text" to="/category/comics">Comics</Link>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/comics">COMICS</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active navbar-custom-text" to="/category/libros">Libros</Link>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/libros">LIBROS</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active navbar-custom-text" to="/category/juegos-de-rol">Juegos de Rol</Link>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/juegos-de-rol">JUEGOS DE ROL</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active navbar-custom-text" to="/category/figuras">Figuras</Link>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/figuras">FIGURAS</NavLink>
                         </li>
                     </ul>
                     <div className="d-flex">

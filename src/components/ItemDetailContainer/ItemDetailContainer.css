@@ -5,3 +5,17 @@
     text-align: center;
     align-items: center;
 }
+
+.loading {
+    font-size: 1.5em;
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+    animation: loadingAnimation 1.5s infinite;
+  }
+  
+@keyframes loadingAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

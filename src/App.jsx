@@ -18,6 +18,7 @@ function App() {
         <Route path='/' element={<ItemListContainer greetings="Bienvenido a OtakuHeaven!" />} />
         <Route path='/category/:category' element={<ItemListContainer />} />
         <Route path='/item/:id' element={<ItemDetailContainer  />} />
+        <Route path='*' element={<h1>404 - PAGE NOT FOUND</h1>} />
       </Routes>
     </BrowserRouter>
   )

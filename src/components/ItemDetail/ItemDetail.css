@@ -1,4 +1,4 @@
-.cutom-item-detail {
+.custom-item-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,14 +13,14 @@
     width: 600px;
 }
 
-.cutom-item-detail h1 {
+.custom-item-detail h1 {
     font-family: "Helvetica", sans-serif;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
-.cutom-item-detail h2 {
+.custom-item-detail h2 {
     font-family: "Helvetica", sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -28,14 +28,19 @@
     margin: 12px 0px;
 }
 
+.custom-text{
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
 
-.cutom-item-detail img {
+.custom-item-detail img {
     height: 400px;
     width: 250px;
     border: solid 1px black;
 }
 
-.cutom-item-detail p {
+.custom-item-detail p {
     font-family: "Helvetica", sans-serif;
     font-size: 16px;
 }
