@@ -199,18 +199,18 @@ const products = [
   },
   {
     id: "23",
-    name: "El Señor de los Anillos - El Juego de Rol",
+    name: "El Señor de los Anillos",
     price: 80000,
     category: "libros",
     img: "/assets/lord-of-the-rings-book.jpg",
     stock: 10,
-    description: "Descripcion de El Señor de los Anillo Juego de Rol"
+    description: "Descripcion de El Señor de los Anillo"
   },
   {
     id: "24",
     name: "Dungeon & Dragons - Caja de Inicio",
     price: 120000,
-    category: "juegos-de-rol",
+    category: "rol",
     img: "/assets/d&d-caja-inicio.png",
     stock: 10,
     description: "Descripcion de El Señor de los Anillo Juego de Rol"
@@ -219,7 +219,7 @@ const products = [
     id: "25",
     name: "El Señor de los Anillos - Viajes por la Tierra Media",
     price: 150000,
-    category: "juegos-de-rol",
+    category: "rol",
     img: "/assets/el-senor-de-los-anillos-viajes-por-la-tierra-media.jpg",
     stock: 10,
     description: "Descripcion de El Señor de los Anillo Juego de Rol"

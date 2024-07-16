@@ -31,6 +31,7 @@ const ItemListContainer = ({ greetings }) => {
   return (
     <div>
       <h1 className='custom-title'>{greetings}</h1>
+      {category && <h1 className='category-title'>{category.toUpperCase()}</h1>}
       {loading ? <p className="loading">Loading...</p> : <ItemList products={products} />}
     </div>
   );

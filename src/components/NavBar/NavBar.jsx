@@ -25,7 +25,7 @@ function NavBar({cartCount}) {
                             <NavLink className="nav-link active navbar-custom-text" to="/category/libros">LIBROS</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link active navbar-custom-text" to="/category/juegos-de-rol">JUEGOS DE ROL</NavLink>
+                            <NavLink className="nav-link active navbar-custom-text" to="/category/rol">ROL</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link active navbar-custom-text" to="/category/figuras">FIGURAS</NavLink>
