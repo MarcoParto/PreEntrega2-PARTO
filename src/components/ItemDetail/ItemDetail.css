@@ -38,6 +38,7 @@
     height: 400px;
     width: 250px;
     border: solid 1px black;
+    background-color: white;
 }
 
 .custom-item-detail p {
